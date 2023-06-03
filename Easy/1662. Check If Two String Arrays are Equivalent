@@ -1,0 +1,13 @@
+Given two string arrays word1 and word2, return true if the two arrays represent the same string, and false otherwise.
+
+A string is represented by an array if the array elements concatenated in order forms the string.
+
+
+class Solution:
+    def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
+        if (''.join([str(w1) for w1 in word1])) == (''.join([str(w2) for w2 in word2])):
+            return True
+        else:
+            return False
+        
+
