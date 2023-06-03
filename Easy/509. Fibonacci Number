@@ -1,0 +1,16 @@
+The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
+
+class Solution:
+    def fib(self, n: int) -> int:
+        a=0
+        b=1
+        count = 0
+        li = []
+
+        while(count < n+1):
+            c = a+b
+            print(li.append(c))    
+            a=b
+            b=c
+            count = count + 1
+        return li
